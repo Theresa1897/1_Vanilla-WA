@@ -1,6 +1,6 @@
 function formatDate(timestamp) {
   let date = new Date(timestamp);
-  let hours = timestamp.getHours();
+  let hours = date.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
   }
@@ -34,7 +34,7 @@ function displayForecast() {
   <img src="http://openweathermap.org/img/wn/50d@2x.png" alt="" width="42" />
   <div class="weather-forecast-temperatures">
   <span class="weather-forecast-temperature-max"> 18° </span>
-  <span class="weather-foecast-temperature-min"> 12 <span>
+  <span class="weather-foecast-temperature-min"> 12° <span>
   </div>
   </div>
   `;
@@ -109,8 +109,8 @@ let celsiusTemperature = null;
 let form = document.querySelector("search-form");
 form.addEventListener("submit", handleSubmit);
 
-let fahrenheitLink = document.querySelector("#fharenheit-link");
-fahrenheirLink.addEventListener("click", displayFahrenheitTemperature);
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
