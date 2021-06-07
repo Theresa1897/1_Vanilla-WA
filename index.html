@@ -11,64 +11,69 @@
       crossrigin="anonymous"
     />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-     <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
   <body>
     <div class="container"></div>
     <div class="weather-app-wrapper">
-    <div class="weather-app">
-      <form id="search-form" class="nb-3">
-        <div class="row">
-          <div class="col-9">
-        <input type="search" placeholder="Type a city..." class="form-control" id="city-input" autocomplete="off"/>
-        </div>
-        <div class="col-3">
-        <input type="submit" value="Search" classs="btn btn-primary w-100 " />
-        </div>
-        </div>
-      </form>
-      <div class="overview">
-      <h1 id="city"></h1>
-      <ul>
-        <li id="date">
-        </li>
-        <li id="description"></li>
-      </ul>
-      </div>
-      <div class="row">
-        <div class="col-6">
-          <div class="clearfix weather-temperature">
-          <img src=""
-          alt="Clear"
-          class="float-left" />
-          <div class="float-left">
-          <strong id="temperature"> </strong>
-          <span class="units">
-            <a href="#" id="celsius-link" class="active">° C</a> | 
-          <a href="#" id="fahrenheit-link">°F</a></span>
-        </div>
-        </div>
-        </div>
-        <div class="col-6">
+      <div class="weather-app">
+        <form id="search-form" class="nb-3">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="Type a city..."
+                class="form-control"
+                id="city-input"
+                autocomplete="off"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                classs="btn btn-primary w-100 "
+              />
+            </div>
+          </div>
+        </form>
+        <div class="overview">
+          <h1 id="city"></h1>
           <ul>
-            <li>Humidity: <span id="humidity"></span>%
-            </li>
-            <li>WInd: <span id="wind"></span> km/h</li>
+            <li id="date"></li>
+            <li id="description"></li>
           </ul>
         </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix weather-temperature">
+              <img src="" alt="Clear" class="float-left" />
+              <div class="float-left">
+                <strong id="temperature"> </strong>
+                <span class="units">
+                  <a href="#" id="celsius-link" class="active">° C</a> |
+                  <a href="#" id="fahrenheit-link">°F</a></span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/h</li>
+            </ul>
+          </div>
+        </div>
+        <div class="weather-forecast" id="forecast"></div>
+        <small>
+          <a href="https://github.com/Theresa1897/1_Vanilla-WA" target="_blank"
+            >Open-Source code</a
+          >
+          by Theresa Contreras
+        </small>
       </div>
-      <div class="weather-forecast" id="forecast">
-      </div>
-      </div>
-      <small>
-        <a href="https://github.com/Theresa1897/1_Vanilla-WA" target="_blank"
-          >Open-Source code</a
-        >
-        by Theresa Contreras
-      </small>
     </div>
-</div>
     <script src="src/app.js"></script>
   </body>
 </html>
